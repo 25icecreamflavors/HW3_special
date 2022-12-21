@@ -8,3 +8,6 @@
 
 ### Files:
 1. entrypoint.py - run it to get predictions
+
+Command example for running the program:
+```python entrypoint.py "45,1,0,115,202,0,1,145,0,1,2,2,3"```
