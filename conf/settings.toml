@@ -1,0 +1,17 @@
+[DATA]
+data_set = "https://raw.githubusercontent.com/5x12/ml-cookbook/master/supplements/data/heart.csv"
+
+[MODEL]
+rf_path = "models/saved/random_forest.pkl"
+gb_path = "models/saved/GB.pkl"
+rf = "rf"
+gb = "gb"
+
+[PARAMS]
+random_state = 808
+test_size = 0.2
+rf_train = {max_depth=[3,6,9], n_estimators=[50, 100, 150], random_state=[808]}
+gb_train = {max_depth=[3,6,9], n_estimators=[50, 100, 150], random_state=[808]}
+
+[PREDICT]
+test = [[45,1,0,115,202,0,1,145,0,1,2,2,3]]
